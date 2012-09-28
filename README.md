@@ -14,7 +14,9 @@ FosCamcorder
 
     config.save_location = "./"; 
 
-3. Run the script (use nohup to ensure the process continues after your session ends):
+3. Change your smtp settings to receive email updates when a camera goes offline.
+
+4. Run the script (use nohup to ensure the process continues after your session ends):
 
     nohup node FosCamcorder.js > /dev/null 2>&1 &
 
