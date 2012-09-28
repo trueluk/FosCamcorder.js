@@ -1,10 +1,24 @@
 FosCamcorder
 =====
 
-How to Use:
-	
-	* # nohup node FosCamcorder.js > /dev/null 2>&1 &
+- Record streams from Foscam IP cameras
+- Get email alerts when camera goes offline
 
-Requires:
 
-    * nodemailer for sending camera offline status messages
+## How to Use:
+1. Add the local IP address of your cameras to config.js: 
+
+    config.cam_servers = ['192.168.1.2'];
+
+2. Set your save location:
+
+    config.save_location = "./"; 
+
+3. Run the script:
+
+    nohup node FosCamcorder.js > /dev/null 2>&1 &
+    /* use nohup to ensure the process continues after your session ends */
+
+## Requirements:
+
+* nodemailer: for sending camera offline status messages
