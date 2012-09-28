@@ -14,10 +14,9 @@ FosCamcorder
 
     config.save_location = "./"; 
 
-3. Run the script:
+3. Run the script (use nohup to ensure the process continues after your session ends):
 
     nohup node FosCamcorder.js > /dev/null 2>&1 &
-    /* use nohup to ensure the process continues after your session ends */
 
 ## Requirements:
 
